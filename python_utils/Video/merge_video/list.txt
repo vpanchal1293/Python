@@ -1,0 +1,7 @@
+file 'G:\\Marriage\\00000.MTS'
+file 'G:\\Marriage\\00001.MTS'
+file 'G:\\Marriage\\00002.MTS'
+file 'G:\\Marriage\\00003.MTS'
+file 'G:\\Marriage\\00004.MTS'
+file 'G:\\Marriage\\00005.MTS'
+file 'G:\\Marriage\\00006.MTS'
