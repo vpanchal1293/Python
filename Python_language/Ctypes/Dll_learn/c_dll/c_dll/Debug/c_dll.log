@@ -1,0 +1,6 @@
+﻿  c_dll.c
+e:\vipul\learn\c_dll\dll_learn\c_dll\c_dll\c_dll.c(77): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     Creating library E:\Vipul\Learn\C_dll\Dll_learn\c_dll\Debug\c_dll.lib and object E:\Vipul\Learn\C_dll\Dll_learn\c_dll\Debug\c_dll.exp
+  c_dll.vcxproj -> E:\Vipul\Learn\C_dll\Dll_learn\c_dll\Debug\c_dll.dll
+  c_dll.vcxproj -> E:\Vipul\Learn\C_dll\Dll_learn\c_dll\Debug\c_dll.pdb (Full PDB)
