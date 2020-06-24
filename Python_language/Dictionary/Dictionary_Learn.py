@@ -206,3 +206,10 @@ dict_var.setdefault
 dict_var.update
 dict_var.values
 '''
+
+d = {}
+a = 5
+d[a] = '5'
+#print(d) -> {5:'5'}
+a = 7
+#print(d) -> still {5:'5'}
