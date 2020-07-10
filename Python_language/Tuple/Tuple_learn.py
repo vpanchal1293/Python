@@ -66,3 +66,18 @@ print('Min of tup, min(tup_1)',min(tup_1))
 print('\n'*2)
 str_1 = '1234'
 print(tuple(str_1))
+
+msg = '''
+Tuple is immutable but items in are tuple can be mutable and we can change it'''
+print('\n'*2)
+print(msg)
+tup_1 = ([1,2,3],4)
+tup_1[0][1] = 5
+print(tup_1)
+
+msg = '''
+adding only one item in tuple'''
+tup_1 = ([1,2,3])
+print(tup_1)
+tup_1 = ([1,2,3],)
+print(tup_1)
