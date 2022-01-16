@@ -37,3 +37,50 @@ print( (b, a) [a > b] )
 print({True: a, False: b} [a > b])
 
 print((lambda: b, lambda: a)[a < b]()) 
+
+'''
+value of and and or operation
+'''
+a = 10
+b = 20
+c = 30
+'''
+in and operator both operand will checked.
+Answer will be left side operand
+a and b -> 20 
+20 and 30 -> 30
+'''
+print(a and b and c) # answer 30
+
+'''
+For or operator if first operator is nonzero answer will first operand, here second operand won't be checked
+if if first operator is zero second operator nonzero answer will be second operator
+if both oerator zero answer will be zero
+here below example and has higher priority
+10 or 0 or 30
+10 or 30 -> (first operand is nonzero answer first operand)
+'''
+a = 10
+b = 0
+c = 30
+print(a or b and c) 
+
+a = 10
+b = 20
+c = 30
+'''
+10 or 20 and 30
+10 or 30 
+10
+'''
+print(a or b and c) # answer 10
+
+a = 0
+b = 20
+c = 30
+'''
+0 or 20 and 30
+0 or 30
+30
+'''
+print(a or b and c) # answer is 30
