@@ -1,8 +1,12 @@
 msg = '''
-A tuple is a sequence of immutable Python objects.
+A tuple is a sequence of Python objects
 Tuples are sequences, just like lists.
 The main difference between the tuples and the lists is that the tuples cannot be changed unlike lists.
 Tuples use parentheses, whereas lists use square brackets.
+Lists are mutable	Tuples are immutable
+List iterations is Time-consuming  Tuple iterations is comparatively Faster than List
+List has many function(insertion,deletion) Tuple data type is appropriate for accessing the elements
+Lists consume more memory	Tuple consume less memory compared to list
 '''
 print(msg)
 
