@@ -1,0 +1,50 @@
+def gen_1():
+    exp....1
+    yield
+    exp....2
+    yield
+    exp....2
+    yield
+
+Below statement will create generator object
+By doing this it will not execute function
+G = gen_1()
+
+Below statement will execute the gen_1 till first yield found 
+next(G) -> will execute exp....1
+next(G) -> will execute exp....2
+
+if next(G) can't find yield statement then it will raise StopGenerator error
+example
+
+def gen_2(val):
+    if val == 1:
+        return 
+    yield
+    
+G2 = gen_2(1)
+
+Here below statement can't find yield and it return so it will generate StopGenerator error
+next(G2)
+
+Generator send method
+-> can't send non-None value to a just-started generator
+-> If we wnat to send Non None value to generator then we should call next(gen_object) once
+-> next(gen_object) will execute till yield statement
+-> send will call next method implicitly
+
+def work():   
+    num = yield   #line 1
+    while True:   #line 2
+        print(f"num = {num}")   #line 3
+        num = yield num*2   #line 4
+        
+In above example 
+w = work() -> will create generator oject
+next(w) -> will execute work function till first yield statement
+w.send(2) -> will get num at line 2 and execute work function till first yield statement
+w.send(3) -> will get num at line 4 and execute work function till first yield statement
+
+
+next(gen_object) will execute till next yield statement
+gen_object.send(Non None val) will resume from last executed yield statement with passed value exceute till next yield statement
